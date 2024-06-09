@@ -1,0 +1,245 @@
+* {
+    font-family: "Marcellus", serif;
+}
+
+:root {
+  --primary: #34AD54;
+  --secondary: #FF9933;
+  --light: #F6FFF2;
+  --dark: #263A4F;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* atur nilai z-index sesuai kebutuhan */
+background: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    background: var(--secondary);
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -49px;
+}
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #198754;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+  margin-top: 183px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: bg-warning;
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media(min-width:768px) {
+  #wrapper {
+    padding-left: 0;
+  }
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+
+.services-1-wrap .service-1 .service-1-icon img {
+  width: 50px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.services-1-wrap .service-1 {
+  padding: 20px 30px;
+  border: 1px solid #efefef;
+  border-right: none;
+  position: relative;
+}
+
+.services-1-wrap .service-1 .number {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: 400;
+  font-family: "Marcellus", sans-serif;
+  color: #dcdcdc;
+}
+
+
+.ftco-testimonial-1 .ftco-testimonial-vcard img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
+
+.ftco-testimonial-1 .ftco-testimonial-vcard h3 {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0;
+  color: #000; }
+
+.ftco-testimonial-1 p {
+  color: #a2a2a2; }
+
+
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px; }
+  
+  .testimonial blockquote p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700; }
+  
+  .testimonial .client-name {
+    font-family: "Marcellus", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #116530; }
+
+
+footer {
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px 0; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+
+
